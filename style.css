@@ -1,0 +1,73 @@
+.navbar {
+  color: whitesmoke;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+h1 {
+  margin: auto;
+}
+
+.side-bar {
+  padding-top: 15px;
+  background-color: aquamarine;
+  height: 100vh;
+  overflow: auto;
+}
+
+.forecast-info {
+  background-color: #f1f1f1;
+}
+
+.current-weather {
+  padding: 30px;
+  margin-bottom: 2.5vh;
+  background-color: lightskyblue;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 3px 3px 5px 0px #ccc;
+}
+
+.five-day-forecast-title {
+  margin-bottom: 2.5vh;
+}
+
+.day-1 {
+  background-color: #ffe2d7;
+}
+
+.day-2 {
+  background-color: #ffc5b1;
+}
+
+.day-3 {
+  background-color: #ff9169;
+}
+
+.day-4 {
+  background-color: #ff9169;
+}
+
+.day-5 {
+  background-color: #ff7f50;
+}
+
+.day-1,
+.day-2,
+.day-3,
+.day-4,
+.day-5 {
+  border: #cacaca solid 3px;
+  font-weight: 500;
+  border-radius: 10px;
+  margin: auto;
+  padding: 15px;
+}
+
+.search-items {
+  margin: auto;
+  margin-top: 5px;
+  background-color: transparent;
+  border-bottom: #a7a7a7 solid 1px;
+  padding: 0px 35px;
+}
