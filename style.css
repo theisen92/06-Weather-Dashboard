@@ -1,3 +1,4 @@
+/* Sytle for the banner  */
 .navbar {
   color: whitesmoke;
   font-family: "Oswald", sans-serif;
@@ -9,6 +10,7 @@ h1 {
   margin: auto;
 }
 
+/* Style for the side bar */
 .side-bar {
   padding-top: 15px;
   background-color: aquamarine;
@@ -16,6 +18,7 @@ h1 {
   overflow: auto;
 }
 
+/* Style for the current weather */
 .forecast-info {
   background-color: #f1f1f1;
 }
@@ -28,6 +31,7 @@ h1 {
   box-shadow: 3px 3px 5px 0px #ccc;
 }
 
+/* Style for the five day forecast */
 .five-day-forecast-title {
   margin-bottom: 2.5vh;
 }
@@ -64,6 +68,7 @@ h1 {
   padding: 15px;
 }
 
+/* Style for the previous searches */
 .search-items {
   margin: auto;
   margin-top: 5px;

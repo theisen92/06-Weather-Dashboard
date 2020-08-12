@@ -27,14 +27,17 @@
     />
   </head>
   <body>
+    <!-- Banner on top with clear button -->
     <nav class="navbar navbar-dark bg-dark clearBtn">
       <button type="button" class="btn btn-secondary btn-lg">
         Clear search
       </button>
       <h1>Weather Dashboard</h1>
     </nav>
+
     <div class="container-fluid">
       <div class="row">
+        <!-- Side bar with city search -->
         <div class="col-sm-2 side-bar">
           <h4>Search for city weather</h4>
           <div id="cityForm" class="input-group mb-3">
@@ -56,8 +59,12 @@
               </button>
             </div>
           </div>
+
+          <!-- Previous searchs  -->
           <div id="prev-search" class="btn" type="submit"></div>
         </div>
+
+        <!-- The current weather in the city -->
         <div class="col-sm-10 forecast-info">
           <div class="row">
             <div class="col-xl-12 current-weather">
@@ -69,6 +76,8 @@
               <h4 class="card-text forecastUV-current"></h4>
             </div>
           </div>
+
+          <!-- Five day forecast -->
           <h3 class="five-day-forecast-title">5 day forecast</h3>
           <div class="row">
             <div class="col-sm-2 day-1">

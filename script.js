@@ -4,6 +4,7 @@ var iconcode = "";
 var uvIndex = "";
 var locationInput = "Minneapolis";
 
+// Function to get what's in the local storage
 function searchHistoryFunc() {
   if (localStorage.length !== 0) {
     var searchStore = JSON.parse(localStorage.searchHistory);
@@ -15,6 +16,7 @@ function searchHistoryFunc() {
   }
 }
 
+//Getting the UV index
 function getUVIndex() {
   var lon = inputResponse.coord.lon;
   var lat = inputResponse.coord.lat;
@@ -35,6 +37,7 @@ function getUVIndex() {
   });
 }
 
+//Getting the five day forecast
 function fiveDay() {
   var cityName = inputResponse.name;
   var queryFiveDay =
@@ -105,6 +108,7 @@ function fiveDay() {
   });
 }
 
+//Getting the current weather
 function currentForecast() {
   var queryURL =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -140,6 +144,8 @@ function currentForecast() {
 $(document).ready(function () {
   searchHistoryFunc();
   currentForecast();
+
+  //The city search
   $(".search-items").on("click", function (e) {
     e.preventDefault();
     var prevSearch = $(this).text();
@@ -152,6 +158,8 @@ $(document).ready(function () {
       locationInput = $("#location-input").val();
       e.preventDefault();
       currentForecast();
+
+      //Creating the previous search buttons
       $("#prev-search").prepend(
         `<button class="btn btn-lg btn-block search-items">${locationInput}</button>`
       );
@@ -165,6 +173,8 @@ $(document).ready(function () {
       searchStore = JSON.parse(localStorage.searchHistory);
     }
     $("#location-input").val("");
+
+    //When clicking the previous search buttons
     $(".search-items").on("click", function (e) {
       e.preventDefault();
       var prevSearch = $(this).text();
@@ -173,6 +183,8 @@ $(document).ready(function () {
       currentForecast();
     });
   });
+
+  //Clear button functionality
   $(".clearBtn").on("click", function () {
     localStorage.clear();
     window.location.reload();
