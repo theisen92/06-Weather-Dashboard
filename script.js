@@ -21,7 +21,7 @@ function getUVIndex() {
   var lon = inputResponse.coord.lon;
   var lat = inputResponse.coord.lat;
   var queryUVIndex =
-    "http://api.openweathermap.org/data/2.5/uvi?appid=" +
+    "https://api.openweathermap.org/data/2.5/uvi?appid=" +
     APIKey +
     "&lat=" +
     lat +
@@ -41,7 +41,7 @@ function getUVIndex() {
 function fiveDay() {
   var cityName = inputResponse.name;
   var queryFiveDay =
-    "http://api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
     cityName +
     "&appid=" +
     APIKey;
